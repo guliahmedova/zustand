@@ -6,8 +6,6 @@ const Courses = () => {
     const addCourse = useCourseStore((state) => state.addCourse);
     const { courses, removeCourse, toggleCourseStatus } = useCourseStore((state) => state);
 
-    console.log("rendered");
-
     const handleCourseSubmit = () => {
         if (!title) return alert("please add a course title");
 
