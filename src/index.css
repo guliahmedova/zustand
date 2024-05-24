@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkslategrey;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
+  background-color: darkslateblue;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.navbar a:hover {
+  text-decoration: underline;
+  transition: 0.2s all ease-in-out;
+}
+.container {
+  height: 100vh;
+  border: 1px solid darkgrey;
+  padding: 1.5rem;
+}
+.counter_txt {
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+.counter_btn {
+  width: auto;
+  padding: 0 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.todoListByTidyCoder {
+  background: #ffbe76;
+  border-radius: 9px;
+  padding: 3px 7px 11px 7px;
+  max-height: 75vh;
+  width: 333px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.todoListByTidyCoder > div:first-child {
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.todoListByTidyCoder > div:first-child > * {
+  border-radius: 5px;
+  padding: 9px;
+  border: 2px solid #f0932b;
+  margin: 3px;
+}
+.todoListByTidyCoder > div:first-child > button {
+  background: #f0932b;
+  border: none;
+  cursor: pointer;
+}
+.todoListByTidyCoder > div:first-child > button:hover {
+  background: #e74c3c;
+  border: none;
+}
+.todoListByTidyCoder > div:first-child > button:active {
+  background: #c0392b;
+  border: none;
+}
+.todoListByTidyCoder > div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 0;
+  margin: 0;
+}
+.todoListByTidyCoder > div:last-child > div {
+  border: 1px solid black;
+  margin: 0;
+  padding: 0 3px 0 15px;
+  background: #ecf0f1;
+  word-break: break-word;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todoListByTidyCoder > div:last-child > div > div > button {
+  border: none;
+  padding: 15px;
+  margin: 0;
+  border-radius: 50%;
+}
+#taskList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-top: 2rem;
+}
+#taskList li {
+  display: flex;
+  font-size: 1.2rem;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+#taskList li span {
+  width: 2rem;
+  height: 2rem;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
